@@ -1,7 +1,8 @@
-package com.kakapo.gostrada
+package com.kakapo.gostrada.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kakapo.gostrada.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -9,13 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoStrada">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GoStrada.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GoStrada.NoActionBar" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GoStrada.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

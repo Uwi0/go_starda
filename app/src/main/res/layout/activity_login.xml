@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".ui.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="237dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_strada" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="297dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sign_in_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_username"
+        android:layout_width="289dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:startIconContentDescription="@string/username"
+        app:startIconDrawable="@drawable/ic_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_primary"
+            android:hint="@string/username"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_password"
+        android:layout_width="305dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_username"
+        app:startIconContentDescription="@string/password"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="249dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        android:backgroundTint="@color/button_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_password"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+    <Button
+        android:id="@+id/btn_forgot_password"
+        android:layout_width="202dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="105dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
