@@ -8,7 +8,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.kakapo.gostrada.R
 import com.kakapo.gostrada.databinding.ActivityLoginBinding
+import com.kakapo.gostrada.model.entities.GoStrada
 import com.kakapo.gostrada.viewModel.LoginViewModel
+import kotlin.math.log
 
 class LoginActivity : AppCompatActivity() {
 
@@ -24,18 +26,19 @@ class LoginActivity : AppCompatActivity() {
 
         loginViewModelObserver()
 
-
+        val username = binding.edUsername.text.toString()
+        val password = binding.edPassword.text.toString()
 
         binding.btnLogin.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
-            viewModel.getUserDataFromAPI()
+            viewModel.postUserDataToAPi(username, password)
             startActivity(intent)
         }
 
     }
 
     private fun loginViewModelObserver() {
-        viewModel.userDataResponse.observe(this) { userData ->
+        viewModel.updateUserDataResponse.observe(this) { userData ->
             Log.i("Data User response", "$userData")
         }
 

@@ -19,6 +19,7 @@ class LoginViewModel : ViewModel() {
     private val goStradaApiService = GoStradaApiService()
     val loadUserData = MutableLiveData<Boolean>()
     val userDataResponse = MutableLiveData<GoStrada>()
+    val updateUserDataResponse = MutableLiveData<GoStrada.msg>()
     val userDataLoadingError = MutableLiveData<Boolean>()
 
 
@@ -47,17 +48,17 @@ class LoginViewModel : ViewModel() {
         )
     }
 
-    fun postUserDataToAPi(userData: GoStrada){
+    fun postUserDataToAPi(username: String, password: String){
         loadUserData.value = true
         compositeDisposable.add(
             goStradaApiService
-                .postUserData(userData)
+                .postUserData(username, password)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribeWith(object : DisposableObserver<GoStrada>() {
-                    override fun onNext(value: GoStrada?) {
+                .subscribeWith(object : DisposableObserver<GoStrada.msg>() {
+                    override fun onNext(value: GoStrada.msg?) {
                         loadUserData.value = true
-                        userDataResponse.value = value!!
+                        updateUserDataResponse.value = value!!
                         Log.i("user data", value.toString())
                         userDataLoadingError.value = false
                     }

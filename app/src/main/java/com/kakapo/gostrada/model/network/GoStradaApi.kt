@@ -5,7 +5,8 @@ import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
 
 object GoStradaApi {
-    const val API: String = "http://mhs.demes.id/login/do_login/"
+    const val BASE_URL: String = "https://mhs.demes.id/login/get_data/"
+
 //
 //    private val strada by lazy {
 //        GoStradaService.create()

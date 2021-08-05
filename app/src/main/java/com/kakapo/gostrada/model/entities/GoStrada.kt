@@ -1,6 +1,17 @@
 package com.kakapo.gostrada.model.entities
 
+import com.google.gson.annotations.SerializedName
+
 data class GoStrada(
-    var error: Boolean,
-    var error_msg: String
-)
+    @SerializedName("error") var error: Boolean,
+    @SerializedName("error_msg") var errorMsg: msg
+){
+    data class msg(
+        @SerializedName("id") var id: Int?,
+        @SerializedName("name") var name: String?,
+        @SerializedName("username") var username: String,
+        @SerializedName("password") var password: String
+    )
+}
+
+
