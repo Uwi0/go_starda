@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class GoStrada(
     @SerializedName("error") var error: Boolean,
-    @SerializedName("error_msg") var errorMsg: msg
+    @SerializedName("error_msg") var errorMsg: String
 ){
     data class msg(
         @SerializedName("id") var id: Int?,

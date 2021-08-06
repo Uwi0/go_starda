@@ -21,5 +21,5 @@ interface GoStradaService {
     fun postUserData(
         @Field("username") username: String?,
         @Field("password") password: String?
-    ): Observable<GoStrada.msg>
+    ): Observable<GoStrada>
 }

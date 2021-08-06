@@ -26,12 +26,12 @@ class LoginActivity : AppCompatActivity() {
 
         loginViewModelObserver()
 
-        val username = binding.edUsername.text.toString()
-        val password = binding.edPassword.text.toString()
+        val username = binding.edUsername.text
+        val password = binding.edPassword.text
 
         binding.btnLogin.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
-            viewModel.postUserDataToAPi(username, password)
+            viewModel.postUserDataToAPi(username.toString(), password.toString())
             startActivity(intent)
         }
 

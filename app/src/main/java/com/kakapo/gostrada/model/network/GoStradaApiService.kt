@@ -18,7 +18,7 @@ class GoStradaApiService {
         return api.getUserAccount()
     }
 
-    fun postUserData(username: String, password: String): Observable<GoStrada.msg>{
+    fun postUserData(username: String, password: String): Observable<GoStrada>{
         return api.postUserData(username, password)
     }
 }

@@ -19,7 +19,7 @@ class LoginViewModel : ViewModel() {
     private val goStradaApiService = GoStradaApiService()
     val loadUserData = MutableLiveData<Boolean>()
     val userDataResponse = MutableLiveData<GoStrada>()
-    val updateUserDataResponse = MutableLiveData<GoStrada.msg>()
+    val updateUserDataResponse = MutableLiveData<GoStrada>()
     val userDataLoadingError = MutableLiveData<Boolean>()
 
 
@@ -55,8 +55,8 @@ class LoginViewModel : ViewModel() {
                 .postUserData(username, password)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribeWith(object : DisposableObserver<GoStrada.msg>() {
-                    override fun onNext(value: GoStrada.msg?) {
+                .subscribeWith(object : DisposableObserver<GoStrada>() {
+                    override fun onNext(value: GoStrada?) {
                         loadUserData.value = true
                         updateUserDataResponse.value = value!!
                         Log.i("user data", value.toString())
