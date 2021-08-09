@@ -3,7 +3,7 @@ package com.kakapo.gostrada.model.entities
 import com.google.gson.annotations.SerializedName
 
 data class GoStrada(
-    @SerializedName("error") var error: Boolean,
+    @SerializedName("error") var error: String,
     @SerializedName("error_msg") var errorMsg: String
 ){
     data class msg(

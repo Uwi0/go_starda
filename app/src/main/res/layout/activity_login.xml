@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login"
+    android:background="@color/color_primary"
     tools:context=".ui.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="237dp"
+        android:layout_width="0dp"
         android:layout_height="86dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,8 +19,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="123dp"
+        android:layout_height="72dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="297dp"
@@ -36,7 +36,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ti_username"
-        android:layout_width="289dp"
+        android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="42dp"
@@ -61,17 +61,15 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ti_password"
-        android:layout_width="305dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="50dp"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
         android:backgroundTint="@color/white"
         android:textColorHint="@color/white"
         app:endIconMode="password_toggle"
         app:hintTextColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ti_username"
+        app:layout_constraintStart_toStartOf="@+id/ti_username"
         app:layout_constraintTop_toBottomOf="@+id/ti_username"
         app:startIconContentDescription="@string/password"
         app:startIconDrawable="@drawable/ic_password">
@@ -88,33 +86,28 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="249dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
         android:layout_height="47dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/button_color"
         android:text="@string/login"
         android:textColor="@color/white"
         app:cornerRadius="16dp"
-        android:backgroundTint="@color/button_color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ti_password"
-        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        app:layout_constraintEnd_toEndOf="@+id/ti_password"
+        app:layout_constraintStart_toStartOf="@+id/ti_password"
+        app:layout_constraintTop_toBottomOf="@+id/ti_password" />
 
     <Button
         android:id="@+id/btn_forgot_password"
-        android:layout_width="202dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="105dp"
         style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="42dp"
         android:text="@string/forgot_password"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
 

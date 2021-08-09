@@ -11,7 +11,9 @@
     //strada color
     <color name="color_primary">#403d43</color>
     <color name="bottom_line">#998383</color>
+    <color name="text_color">#F19409</color>
     <color name="button_color">#1E7CD3</color>
     <color name="text_forgot_color">#C9E1DC</color>
     <color name="user_border_profile_color">#51545F</color>
+    <color name="text_user_data">#CFCCD1</color>
 </resources>
