@@ -3,20 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.kakapo.gostrada.ui.home.HomeFragment"
+        android:id="@+id/navigation_home"
+        android:name="com.kakapo.gostrada.ui.fragment.home.HomeFragment"
+        android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.kakapo.gostrada.ui.gallery.GalleryFragment"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/navigation_activity"
+        android:name="com.kakapo.gostrada.ui.fragment.activity.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_activity" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.kakapo.gostrada.ui.slideshow.SlideshowFragment"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/navigation_class"
+        android:name="com.kakapo.gostrada.ui.fragment.menuClass.ClassFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_class" />
+
+    <fragment
+        android:id="@+id/navigation_consults"
+        android:name="com.kakapo.gostrada.ui.fragment.consult.ConsultFragment"
+        android:label="@string/menu_consult"
+        tools:layout="@layout/fragment_consult" />
 </navigation>

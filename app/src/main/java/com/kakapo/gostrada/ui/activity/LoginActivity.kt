@@ -1,16 +1,12 @@
-package com.kakapo.gostrada.ui
+package com.kakapo.gostrada.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.kakapo.gostrada.R
 import com.kakapo.gostrada.databinding.ActivityLoginBinding
-import com.kakapo.gostrada.model.entities.GoStrada
 import com.kakapo.gostrada.viewModel.LoginViewModel
-import kotlin.math.log
 
 class LoginActivity : AppCompatActivity() {
 
@@ -30,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
         val password = binding.edPassword.text
 
         binding.btnLogin.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             viewModel.postUserDataToAPi(username.toString(), password.toString())
             startActivity(intent)
         }
