@@ -2,6 +2,71 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:background="@color/color_primary">
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="@dimen/nav_margin_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:src="@drawable/ic_nav_drawer"
+            android:layout_gravity="start|center"/>
+
+        <ImageView
+            android:layout_width="166dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/nav_margin_start"
+            android:src="@drawable/ic_strada"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/nav_margin_start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_qrcode"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nav_margin_start"
+            android:textSize="14sp"
+            android:text="QR Code"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="center"
+            android:textColor="#B0C9E1DC"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/nav_margin_start"
+        android:layout_marginStart="@dimen/nav_margin_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#958585"
+        android:text="Student Activity"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/nav_margin_start"
+        android:layout_marginEnd="@dimen/nav_margin_start"
+        android:background="#716363"/>
 
 </LinearLayout>
