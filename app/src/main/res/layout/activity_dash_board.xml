@@ -23,10 +23,14 @@
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view_drawer"
             style="@style/Widget.Design.NavigationView"
+            android:background="@color/color_primary"
+            app:itemIconTint="#B0C9E1DC"
+            app:itemTextColor="#B0C9E1DC"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="end|right"
             android:fitsSystemWindows="true"
+            app:menu="@menu/drawer_nav_menu"
             app:headerLayout="@layout/nav_header_main"/>
 
 

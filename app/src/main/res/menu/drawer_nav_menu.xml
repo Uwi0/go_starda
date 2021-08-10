@@ -1,4 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/kalender_akademik"
+        android:icon="@drawable/ic_calender_academic"
+        android:title="@string/kalender_akademik" />
+
+    <item
+        android:id="@+id/jadwal_kuliah"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/jadwal_kuliah" />
+
+    <item
+        android:id="@+id/absensi"
+        android:icon="@drawable/ic_present"
+        android:title="@string/absensi" />
+
+    <item
+        android:id="@+id/request_surat"
+        android:icon="@drawable/ic_request"
+        android:title="@string/request_surat" />
+
+    <item
+        android:id="@+id/riwayat_krs"
+        android:icon="@drawable/ic_krs_history"
+        android:title="@string/riwayat_krs" />
+
+    <item
+        android:id="@+id/lihat_khs"
+        android:icon="@drawable/ic_khs"
+        android:title="@string/lihat_khs" />
+
+    <item
+        android:id="@+id/transkrip_nilai"
+        android:icon="@drawable/ic_transkrip_nilai"
+        android:title="@string/transkrip_nilai" />
+
+    <item
+        android:id="@+id/pembayarn_spp"
+        android:icon="@drawable/ic_spp_payment"
+        android:title="@string/pembayaran_spp" />
+
+    <item
+        android:id="@+id/non_akademik"
+        android:icon="@drawable/ic_non_academic"
+        android:title="@string/non_akademik" />
+
 
 </menu>

@@ -27,4 +27,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="kalender_akademik">Kalender Akademik</string>
+    <string name="jadwal_kuliah">Jadwal Kuliah</string>
+    <string name="absensi">Absensi</string>
+    <string name="request_surat">Request Surat</string>
+    <string name="riwayat_krs">Riwayat KRS</string>
+    <string name="lihat_khs">Lihat KHS</string>
+    <string name="transkrip_nilai">Transkrip Nilai</string>
+    <string name="pembayaran_spp">Pembayaran SPP</string>
+    <string name="non_akademik">Non Akademik</string>
 </resources>
