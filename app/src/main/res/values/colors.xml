@@ -16,4 +16,5 @@
     <color name="text_forgot_color">#C9E1DC</color>
     <color name="user_border_profile_color">#51545F</color>
     <color name="text_user_data">#CFCCD1</color>
+    <color name="color_text_fragment_home">#CCC9E1DC</color>
 </resources>
